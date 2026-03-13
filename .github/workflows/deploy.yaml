@@ -1,5 +1,10 @@
 name: Depoly ON Push
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 on:
   push:
     branches:
@@ -28,7 +33,7 @@ jobs:
         run: echo "Health check passed!"
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           path: ./out
 
