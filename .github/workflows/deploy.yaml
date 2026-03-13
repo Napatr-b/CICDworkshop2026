@@ -26,4 +26,6 @@ jobs:
 
       - name: Health Check
         run: echo "Health check passed!"
+  
+  deploy:
     
