@@ -33,7 +33,7 @@ jobs:
         run: echo "Health check passed!"
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@4
         with:
           path: ./out
 
